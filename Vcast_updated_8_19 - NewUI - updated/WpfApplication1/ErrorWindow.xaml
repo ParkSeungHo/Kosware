@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfApplication1.ErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ErrorWindow" Height="300" Width="600" WindowStyle="None" >
+    <Grid>
+        <Image Source="Image/Error.png" Width="600" Height="300" Margin="0,0,0,0" />
+        <StackPanel x:Name="spClose" Height="30" Margin="559,10,0,252" MouseEnter="spClose_MouseEnter" MouseLeave="spClose_MouseLeave" Background="Transparent"  />
+        <RichTextBox x:Name="rtbMessage" BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="201,117,0,0" VerticalAlignment="Top" Width="360" FontWeight="Bold" FontSize="18" Foreground="White" Height="119"/>
+        <Image x:Name="imgClose" Source="Image/닫기.png" Margin="407,189,66,34" MouseLeftButtonDown="spClose_MouseLeftButtonDown" />
+        <!--<Image x:Name="imgClose" Height="30" Margin="559,10,10,252" MouseLeftButtonDown="imgClose_MouseLeftButtonDown" MouseEnter="imgClose_MouseEnter" MouseLeave="imgClose_MouseLeave" />-->
+    </Grid>
+</Window>

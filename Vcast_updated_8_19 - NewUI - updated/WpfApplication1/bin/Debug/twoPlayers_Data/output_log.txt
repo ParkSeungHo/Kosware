@@ -1,0 +1,264 @@
+Initialize engine version: 4.5.0f6 (fd4616464986)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3788]
+    Renderer: Intel(R) HD Graphics 4000
+    Vendor:   Intel
+    VRAM:     912 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.083 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 59Hz; virtual: 3520x1080 at 0,0
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\System.dll (this message is harmless)
+0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Platform assembly: D:\SW 융합\Vcast_updated_8_19 - NewUI - updated\WpfApplication1\bin\Debug\twoPlayers_Data\Managed\Boo.Lang.dll (this message is harmless)
+Waiting for users.
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 Pelvis
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, 0.5, 0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (-0.5, 0.5, 0.5, 0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 Spine
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, 0.5, 0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.0, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 Spine1
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, 0.5, 0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.0, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 Neck
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.6, 0.4, 0.6, -0.4)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, -0.2, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 Head
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, 0.5, 0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.2, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 L UpperArm
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (0.7, 0.0, 0.0, -0.7)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.1, 0.0, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 L Forearm
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (0.7, -0.1, -0.1, -0.7)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.1, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 L Hand
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (1.0, 0.1, -0.1, -0.1)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (-0.7, -0.1, -0.1, 0.8)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 R UpperArm
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (0.0, 0.7, -0.7, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, -0.1, 0.0, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 R Forearm
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (0.1, 0.7, -0.7, 0.1)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.1, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 R Hand
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (0.1, 0.1, -1.0, -0.1)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.7, 0.1, -0.1, 0.8)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 L Thigh
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, -0.5, -0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 1.0, 0.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 L Calf
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.6, -0.4, -0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.0, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 L Foot
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, -0.5, -0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (-0.1, 0.0, -0.1, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 R Thigh
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, -0.5, -0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 1.0, 0.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 R Calf
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, -0.5, -0.6, -0.4)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.0, 0.0, 0.0, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+pos2 yuni_Bip001 R Foot
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Rotation: (-0.5, -0.5, -0.5, -0.5)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+
+LocalRotation: (0.1, 0.0, -0.1, 1.0)
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+0
+ 
+(Filename: C:/BuildAgent/work/aeedb04a1292f85a/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore

@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApplication1.Dialogs"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+	Title="Dialogs" Loaded="Window_Loaded_1" WindowStartupLocation="CenterScreen" Width="360" Height="100" Closed="Window_Closed_1" WindowStyle="None" ShowInTaskbar="False" ResizeMode="NoResize">
+
+    <Grid Margin="0">
+        <ProgressBar x:Name="encodeProgress" HorizontalAlignment="Center" Height="16" Margin="31,41,31,25" VerticalAlignment="Center" Width="280" BorderThickness="1"/>
+        <Label x:Name="StatusMsg" Content="Label" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

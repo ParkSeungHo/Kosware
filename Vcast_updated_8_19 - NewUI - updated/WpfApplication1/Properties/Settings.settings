@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WpfApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WpfApplication1_kr_co_vcast_www_VCastService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.vcast.co.kr/service/VCastService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

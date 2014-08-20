@@ -1,0 +1,159 @@
+﻿<Window x:Class="WpfApplication1.LectureEditingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LectureEditingWindow" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized" KeyDown="Window_KeyDown" Closed="Window_Closed_1" ContentRendered="Window_ContentRendered_1" ShowInTaskbar="False">
+    
+    <Grid HorizontalAlignment="Left" Height="1090" Width="1920" VerticalAlignment="Top">
+        <Grid.Background>
+            <ImageBrush ImageSource="Image/bg.png"/>
+        </Grid.Background>
+
+        <!--상 그리드-->
+        <Grid x:Name="grid_title" HorizontalAlignment="Left" VerticalAlignment="Top" Height="82" Width="1920">
+            <Image Height="61" Width="67" Margin="10.5,10.5,1843,10.5" Source="Image/타이틀아이콘.png" />
+        </Grid>
+
+        <!--좌 그리드-->
+        <Grid HorizontalAlignment="Left" Margin="0,82,0,0" VerticalAlignment="Top" Height="713" Width="1240" >
+            <MediaElement x:Name="showMedia" HorizontalAlignment="Left" Height="713" VerticalAlignment="Top" Width="1240" LoadedBehavior="Manual" ScrubbingEnabled="True" MediaOpened="showMedia_MediaOpened"/>
+        </Grid>
+
+        <!--하 그리드-->
+        <Grid HorizontalAlignment="Left" Margin="0,795,0,0" VerticalAlignment="Top" Height="280" Width="1240">
+            <Slider x:Name="slider_seek" HorizontalAlignment="Left" Margin="40,157,0,0" VerticalAlignment="Top" Height="36" Width="1168" IsMoveToPointEnabled="True"/>
+            <Image HorizontalAlignment="Left" Margin="40,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/저장하기.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_9"/>
+            <Image HorizontalAlignment="Left" Margin="208,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/전면병합.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_4"/>
+            <Image HorizontalAlignment="Left" Margin="375,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/후면병합.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_5"/>
+            <Image HorizontalAlignment="Left" Margin="544,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/이후삭제.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_6"/>
+            <Image HorizontalAlignment="Left" Margin="711,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/이전삭제.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_7"/>
+
+            <Image HorizontalAlignment="Left" Margin="879,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/인코딩.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_8"/>
+            <Image HorizontalAlignment="Left" Margin="1046,198,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/서버전송.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_11"/>
+            
+            <Image x:Name="image_PlayPause" HorizontalAlignment="Left" Height="95" Margin="78,52,0,0" VerticalAlignment="Top" Width="95" Source="Image/임시재생버튼.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_2"/>
+            <Image HorizontalAlignment="Left" Height="69" Margin="183,74,0,0" VerticalAlignment="Top" Width="70" Source="Image/정지버튼.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_3"/>
+            <Image HorizontalAlignment="Left" Height="69" Margin="258,74,0,0" VerticalAlignment="Top" Width="70" Source="Image/삭제버튼.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_10"/>
+            <Label x:Name="DurationLabel" Content="00:00:00.00" Height="69" Width="300" Margin="350,74,590,137" Foreground="White" FontSize="40" FontWeight="Bold"/>
+        </Grid>
+
+        <!--우 그리드-->
+        <Grid HorizontalAlignment="Left" Height="998" Margin="1240,82,0,0" VerticalAlignment="Top" Width="680">
+            <Image Height="51" Width="671" Margin="4.5,5,10,949" Source="Image/동영성기본설정값_2.png" />
+            <ListView x:Name="lectureSaveList" ItemsSource="{Binding}"  Height="765" HorizontalAlignment="Left" VerticalAlignment="Top" Width="650" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="15,65,0,0" Background="{x:Null}" Foreground="#FFE4E4E4" MouseDoubleClick="lectureSaveList_MouseDoubleClick" BorderBrush="#FF878787">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Style.Resources>
+                            <LinearGradientBrush x:Key="ListItemHoverFill" EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FF939393" Offset="0"/>
+                                <GradientStop Color="#FF595959" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Style.Resources>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                    <Border CornerRadius="2" SnapsToDevicePixels="True"  
+                                BorderThickness="{TemplateBinding BorderThickness}"   
+                                BorderBrush="{TemplateBinding BorderBrush}"   
+                                Background="{TemplateBinding Background}">
+                                        <Border Name="InnerBorder" CornerRadius="1" BorderThickness="1">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition MaxHeight="11" />
+                                                    <RowDefinition />
+                                                </Grid.RowDefinitions>
+
+                                                <Rectangle Name="UpperHighlight" Visibility="Collapsed" Fill="#758F8F8F" />
+                                                <GridViewRowPresenter Grid.RowSpan="2"   
+                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"   
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                            </Grid>
+                                        </Border>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{StaticResource ListItemHoverFill}" />
+                                            <Setter Property="BorderBrush" Value="White" />
+                                            <Setter TargetName="UpperHighlight" Property="Visibility" Value="Visible" />
+                                        </Trigger>
+                                        <Trigger Property="IsEnabled" Value="False">
+                                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView>
+                        <!-- CheckBox -->
+                        <GridViewColumn Header="">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox HorizontalAlignment="Center" IsChecked="{Binding Path=FileChecked}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!--icon-->
+                        <GridViewColumn Header="">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Width="16" Source="{Binding Path=icon}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!-- FileName TextBlock -->
+                        
+
+                        <!-- Count TextBlock -->
+                        <GridViewColumn Header="강의명" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Width="150" Text="{Binding Path=LectureTitle}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        
+                        <!-- Count TextBlock -->
+                        <GridViewColumn Header="차시" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Width="150" Text="{Binding Path=LectureModuleTitle}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        
+                        <GridViewColumn Header="강사" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Width="150" Text="{Binding Path=LecturerName}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="녹화 날짜" Width="150">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Width="150" Text="{Binding Path=Date}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!-- Date TextBlock -->
+                        <!--<GridViewColumn Header="날짜" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Width="200" Text="{Binding Path=Date}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>-->
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBlock x:Name="Directory_Text" HorizontalAlignment="Left" Height="43" Margin="46,917,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Background="White"/>
+            <Image HorizontalAlignment="Left" Margin="524,917,0,0" VerticalAlignment="Top" Width="106" Height="43" Source="Image/폴더변경.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_1"/>
+            <Image HorizontalAlignment="Left" Height="32" Margin="633,917,0,0" VerticalAlignment="Top" Width="32" Source="Image/상위폴더.png" MouseLeftButtonUp="Image_MouseLeftButtonUp_12"/>
+
+        </Grid>
+
+    </Grid>
+</Window>

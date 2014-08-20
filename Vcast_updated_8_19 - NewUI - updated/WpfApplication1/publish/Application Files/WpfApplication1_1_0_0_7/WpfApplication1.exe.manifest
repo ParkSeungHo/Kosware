@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WpfApplication1.exe" version="1.0.0.7" publicKeyToken="01ea4c4c82c7e0d0" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Vcast.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WpfApplication1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WpfApplication1.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Kinect" version="1.8.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.GamerServices" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Input.Touch" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Expression.Encoder.dll" size="1751040">
+      <assemblyIdentity name="Microsoft.Expression.Encoder" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XRDvAqnqzIrvG0+sU1R77922N2Ib8KLIyDd/XxhQY+0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Expression.Encoder.Api2.dll" size="234496">
+      <assemblyIdentity name="Microsoft.Expression.Encoder.Api2" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iJHX50oT6DuLpjN9nF9zrtQl4NKvTvCSOUvexXVHdPk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Expression.Encoder.Types.dll" size="10752">
+      <assemblyIdentity name="Microsoft.Expression.Encoder.Types" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rE/JNRiJ0XOhz+MFWwAlaiDITrfNwVKQQrfsQdib0Vw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Expression.Encoder.Utilities.dll" size="8382976">
+      <assemblyIdentity name="Microsoft.Expression.Encoder.Utilities" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GuaZULCTfzyRKPoyZL1aIwgJ8/XJTJ5PqESnPbuoLJ0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Kinect.Toolkit.FaceTracking.dll" size="38400">
+      <assemblyIdentity name="Microsoft.Kinect.Toolkit.FaceTracking" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>maGno+ysmOd69vW8DyQeK/tXIajy03nKBWHfDyXoihE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Xna.Framework.dll" size="672768">
+      <assemblyIdentity name="Microsoft.Xna.Framework" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>i3qkxJOfJDshQydHKBzIqs3NpWGRoW2eqgNrQTbPDaQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Xna.Framework.Game.dll" size="75264">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Game" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oDR+nZpkZ3mpuxvVEq8zOuB6PbZbMln64yIO2HqA51Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Xna.Framework.Graphics.dll" size="427008">
+      <assemblyIdentity name="Microsoft.Xna.Framework.Graphics" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Oa7X/Y4wjMrOXOk5AlbxyCnKcsLszZfUoPYp8kAV06U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SkinnedModel.dll" size="5120">
+      <assemblyIdentity name="SkinnedModel" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2/212RzHv7SxpzuF9lkSXQSFYPiDZ+BnCSFc3p4RbrA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsGameLibrary1.dll" size="65024">
+      <assemblyIdentity name="WindowsGameLibrary1" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EIAHTqpLuR+SLh5RAwBzoSSSubj4wnJCUpZy78fA840=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfApplication1.exe" size="1052672">
+      <assemblyIdentity name="WpfApplication1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BNy8ix8CYo9BqggNXKHoDLIj6szcqWrJRsgpS2ikosE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WPFFileUpload.Contracts.dll" size="8192">
+      <assemblyIdentity name="WPFFileUpload.Contracts" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rxaPZ9vg/IWB3NB5D8MzCi1ou/XCssOaLX+OGnzcCZI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WPFFileUpload.Controls.dll" size="19968">
+      <assemblyIdentity name="WPFFileUpload.Controls" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uSNQVjdHAJzmcOUxNxFbgwS0NInFtqOxFV3H8HG38U4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WPFFileUpload.Core.dll" size="21504">
+      <assemblyIdentity name="WPFFileUpload.Core" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wW7tUYdl+/0ZMm0WAjFZ8GhOiodv/Q2/byP7MACht2I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WPFFileUpload.Utils.dll" size="10752">
+      <assemblyIdentity name="WPFFileUpload.Utils" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NRjlHM0YCG/PobqPem9qcCh4f0WK87/SKVrW0iiOxmg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Image\1.png" size="20239">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZiZj2Got6OrK99GBIu/m7E0g/i84TtVLNVSJM1QzrsA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\1_마우스오버.png" size="20929">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YEevl6vF6hDAlKVJw+DI6XcVBgHw6WO++tSGFMCaZyc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\2.png" size="21262">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3caSwBrfWb19O0uSLNpDqVtAdLWPjuhMjGaJCD6p4Jc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\2_마우스오버.png" size="21959">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8/JFWqDmzwdsImaXBkmGdkMgflNm4uD09U8S7yh76A0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\3.png" size="20422">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nGIuloCI43wgaglWJHk8t5NBRZ/izb+kTqpWmPBKcMw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\3_마우스오버.png" size="21085">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SzD9MbpJdftpvvdLky/b8MJnHMyD4lalMb7qDasxGOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\4.png" size="18481">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>azitTxBfObUSAhnfHjMPIjT1Ei/WPtAwsMQSCmseBds=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\4_마우스오버.png" size="19122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LpYUuRkuhtPGAupSs0UHnMgFxI9d04/kaqtWl8+BU2o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\5.png" size="21278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RvCJyk8qN5Xbj3bh/I6U7PQyUbX6GKtKZljLMZKMRWs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\5_마우스오버.png" size="21949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IRfObv556P/2Zl+gjRACz0lrD6Io3kij5FQNeFuQmq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\check.png" size="5501">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mvhJW/JWeqO2AO/f5jfeAPyxMsUzIvT5v85/rYFwvS4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\LoadingImg.png" size="48212">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JjWut4TZTi0WqozM0LKeGcTnrwvFaeEbUcRwLDxtrPo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\man1.jpg" size="293430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IucwIbid2N0xCL8lJSE+5JTSxb8Ph1YXxvmsS833Gh4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\man2.jpg" size="243499">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N+D2YHK8V1onTttCEdYlKM29QxsXIpC3B9uJOal69j0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\man3.jpg" size="280086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pGi6FzHRATUlJwIR6gLQF6Xlqj/SDAOXKXR+J+uPyXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\scBg.png" size="64034">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9qTxnB8ylecjvY+DHiBOeBIWt+uGv71eMdPvk3FTNMg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\woman1.jpg" size="240632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/mmNGWjDbMZmOQPoZbN6QaiinVcqzxyW36/W1rwunQQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\woman2.jpg" size="258863">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J5NfENY/bFjlPkBo98Nqm5cvz2aIQ+qPy4YQSn9hr7Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\woman3.jpg" size="294798">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XERny2Q91VgJjZ9aM0K7gl4cr2oCndxZuMPvaC4+ouo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Vcast.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nC25lELtt+qI9eQ6BH4Wi0OvX5feP7KuXzuBwKCkIvk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="WpfApplication1.exe.config" size="1024">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vaTGqazmW9VUw1z8QGwABh4G8o1EGv2BVF1jeS8z1Is=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=GP-KSTATION-3\globepoint2" issuerKeyHash="62deb9dd9ddeee5865338efa809c82e1b8989a98" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OCtCRHFjDA5h+3tlsPbGNyKerDqXl0y9U3KWwSkbUNM=</DigestValue></Reference></SignedInfo><SignatureValue>psX1YdwbhL0mLSJYF9LsyGc/TOCjz7xMvimtfJsIcf+2Q4HClVLd28N58mRlByn+wxFRjEPuz6OW721tYtBhCaJ7FEBmSReB/RsQHxX6t8KiO53ky0+1oK1GC7wHOi68yJweTRuDlNs4C+LHHy21DrtJ/nRZQUI2xC/pvk/CjYk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uNe2ELC/LRxSb/a5XYOuamH7pFgOjIVU7Cqga8/GWHUv7U7Z3dLpwnsCHfKnyL6WD+5Xdby/9pzskR6Zksq5JGmX6Tg27YUP0z0yp9boASC9BSKg4BRG8IKUiKq+tGhTZ3jLyTctW1DKpJUeCwZBbASEP3peedKzN2ms6/O4Bt8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d3501b29c1967253bd4c97973aac9e2237c6f6b0657bfb610e0c637144422b38" Description="" Url=""><as:assemblyIdentity name="WpfApplication1.exe" version="1.0.0.7" publicKeyToken="01ea4c4c82c7e0d0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GP-KSTATION-3\globepoint2</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fRz8LpdH3ddOyOg1kwkj8E3CEYMjTT/58fDiBQYjyBU=</DigestValue></Reference></SignedInfo><SignatureValue>Odmq8Ptz6RDTEh2qaPml7OgXl0MC3X3LNa+2ipSkdA3GKdmjbzHnp0H6SXVICGScRgTbRBgy2TM0x/QWbFUw+7yv4zLEdXaNhFohf3nK0Ff/GVzic2A+WfqM+bddIsZ2dCUbbF2XNJbMJvYuaGU4oD8V68elv2qK38T7KqW1VEo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uNe2ELC/LRxSb/a5XYOuamH7pFgOjIVU7Cqga8/GWHUv7U7Z3dLpwnsCHfKnyL6WD+5Xdby/9pzskR6Zksq5JGmX6Tg27YUP0z0yp9boASC9BSKg4BRG8IKUiKq+tGhTZ3jLyTctW1DKpJUeCwZBbASEP3peedKzN2ms6/O4Bt8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQcpF3ctg+prdOZX33Ua9gWjANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARwBQAC0ASwBTAFQAQQBUAEkATwBOAC0AMwBcAGcAbABvAGIAZQBwAG8AaQBuAHQAMjAeFw0xNDAzMzEwNzQwMTlaFw0xNTAzMzExMzQwMTlaMD0xOzA5BgNVBAMeMgBHAFAALQBLAFMAVABBAFQASQBPAE4ALQAzAFwAZwBsAG8AYgBlAHAAbwBpAG4AdAAyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC417YQsL8tHFJv9rldg65qYfukWA6MhVTsKqBrz8ZYdS/tTtnd0unCewId8qfIvpYP7ld1vL/2nOyRHpmSyrkkaZfpODbthQ/TPTKn1ugBIL0FIqDgFEbwgpSIqr60aFNneMvJNy1bUMqklR4LBkFsBIQ/el550rM3aazr87gG3wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABrSv9nse/L2ytoBWlTlT5u7es5Y7NeXxsN1hOhNQ3bxZiXBbwdh+JcPpSTwFMkYD4qWfOoDoi4b5rPzhIBYY+T3dmP7yLOXocsMIoRr/JW0EWcHrmcY7GVbR76hNOE141cW3UNBi5yWuo0tmbDq+DSDfXT2OLrE1ss/Rp0GkmFj</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

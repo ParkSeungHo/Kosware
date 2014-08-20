@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80DB0665-1382-4B50-AD88-114ACD6D9E26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfApplication1</RootNamespace>
+    <AssemblyName>WpfApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Vcast.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D6E678B97921E59FCEE821B78F52C813145410C0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WpfApplication1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Encoder, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Expression.Encoder.Api2, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Expression.Encoder.Types, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Expression.Encoder.Utilities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Kinect, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.PowerPoint\14.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.PowerPoint.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFFileUpload.Contracts">
+      <HintPath>Service References\WPFFileUpload.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFFileUpload.Controls">
+      <HintPath>Service References\WPFFileUpload.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFFileUpload.Core">
+      <HintPath>Service References\WPFFileUpload.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFFileUpload.Utils">
+      <HintPath>Service References\WPFFileUpload.Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CloseAll.cs" />
+    <Compile Include="DataSetting.cs" />
+    <Compile Include="EnumCollection.cs" />
+    <Compile Include="IncordingProgressBar.xaml.cs">
+      <DependentUpon>IncordingProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Encoder.cs" />
+    <Compile Include="ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LecyureDataSaveTxt.cs" />
+    <Compile Include="LoadingWindow.xaml.cs">
+      <DependentUpon>LoadingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LectureSettingWindow.xaml.cs">
+      <DependentUpon>LectureSettingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RealModeWindow.xaml.cs">
+      <DependentUpon>RealModeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecordWindow.xaml.cs">
+      <DependentUpon>RecordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sockpol.cs" />
+    <Compile Include="soket.cs" />
+    <Compile Include="ucAvatar.xaml.cs">
+      <DependentUpon>ucAvatar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucAVIWinForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAVIWinForm.designer.cs">
+      <DependentUpon>ucAVIWinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBackground.xaml.cs">
+      <DependentUpon>ucBackground.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucLecture.xaml.cs">
+      <DependentUpon>ucLecture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucMaterial.xaml.cs">
+      <DependentUpon>ucMaterial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucPPTWinForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPPTWinForm.Designer.cs">
+      <DependentUpon>ucPPTWinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucWebForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWebForm.designer.cs">
+      <DependentUpon>ucWebForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.xaml.cs">
+      <DependentUpon>Upload.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UnityControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnityControl2.Designer.cs">
+      <DependentUpon>UnityControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="Web References\kr.co.vcast.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Page Include="ChoiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IncordingProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ErrorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LoadingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LectureRecordWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChoiceWindow.xaml.cs">
+      <DependentUpon>ChoiceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LectureRecordWindow.xaml.cs">
+      <DependentUpon>LectureRecordWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="LectureSettingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LectureEditingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RealModeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RecordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucAvatar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucBackground.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucLecture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Upload.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LectureEditingWindow.xaml.cs">
+      <DependentUpon>LectureEditingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAVIWinForm.resx">
+      <DependentUpon>ucAVIWinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPPTWinForm.resx">
+      <DependentUpon>ucPPTWinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWebForm.resx">
+      <DependentUpon>ucWebForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnityControl2.resx">
+      <DependentUpon>UnityControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Web References\kr.co.vcast.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\kr.co.vcast.www\VCastService.wsdl" />
+    <None Include="WpfApplication1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Avatars\avatarbg1.png" />
+    <Resource Include="Image\Avatars\avatarbg2.png" />
+    <Resource Include="Image\Avatars\iron.png" />
+    <Resource Include="Image\Avatars\man.png" />
+    <Resource Include="Image\Avatars\mark.png" />
+    <Resource Include="Image\Avatars\yuni.png" />
+    <Resource Include="Image\UIImage\Avatar\avatarbg.png" />
+    <Resource Include="Image\UIImage\Material\LINK BOX.png" />
+    <Resource Include="Image\녹화시작페이지bg.png" />
+    <Resource Include="Image\녹화실행버튼.png" />
+    <Resource Include="Image\녹화편집bg.png" />
+    <Resource Include="Image\닫기버튼.png" />
+    <Resource Include="Image\삭제버튼.png" />
+    <Resource Include="Image\수정버튼.png" />
+    <Resource Include="Image\일시정지버튼.png" />
+    <Resource Include="Image\정지버튼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\bg.png" />
+    <Resource Include="Image\ppt영역.png" />
+    <Resource Include="Image\강의명_선택완료영역.png" />
+    <Resource Include="Image\강의파일_선택완료영역.png" />
+    <Resource Include="Image\기본저장경로.png" />
+    <Resource Include="Image\배경선택영역.png" />
+    <Resource Include="Image\아바타영역.png" />
+    <Resource Include="Image\차시명_선택완료영역.png" />
+    <Resource Include="Image\플레이영역.png" />
+    <Resource Include="Image\플레이위치가이드.png" />
+    <Resource Include="Image\해상도조정.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\타이틀5.png" />
+    <Resource Include="Image\타이틀아이콘.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="face.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="face2.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\1_Over.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Image\1_마우스오버.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\2_Over.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Image\2_마우스오버.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\3_Over.png" />
+    <Content Include="Image\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\4_Over.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image\BgImages\BackGround1.png" />
+    <Resource Include="Image\BgImages\BackGround2.png" />
+    <Resource Include="Image\Avatars\avatarbgiron.png" />
+    <Resource Include="Image\Avatars\avatarbgwind.png" />
+    <Resource Include="Image\Avatars\wind.png" />
+    <Resource Include="Image\BgImages\BackGround3.jpg" />
+    <Resource Include="Image\BgImages\BackGround4.jpg" />
+    <Resource Include="Image\BgImages\BackGround5.jpg" />
+    <Content Include="Image\Loadinglmg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\man1_1.jpg" />
+    <Resource Include="Image\man2_1.jpg" />
+    <Resource Include="Image\woman2_1.jpg" />
+    <Resource Include="Image\woman3_1.jpg" />
+    <Resource Include="Image\UIImage\Main\all.png" />
+    <Resource Include="Image\UIImage\Main\avatar.png" />
+    <Resource Include="Image\UIImage\Main\avatarname.png" />
+    <Resource Include="Image\UIImage\Main\avatarname2.png" />
+    <Resource Include="Image\UIImage\Main\bgname.png" />
+    <Resource Include="Image\UIImage\Main\bgname2.png" />
+    <Resource Include="Image\UIImage\Main\glow.png" />
+    <Resource Include="Image\UIImage\Main\glow1.png" />
+    <Resource Include="Image\UIImage\Main\glow10.png" />
+    <Resource Include="Image\UIImage\Main\glow2.png" />
+    <Resource Include="Image\UIImage\Main\glow3.png" />
+    <Resource Include="Image\UIImage\Main\glow4.png" />
+    <Resource Include="Image\UIImage\Main\glow5.png" />
+    <Resource Include="Image\UIImage\Main\glow6.png" />
+    <Resource Include="Image\UIImage\Main\glow7.png" />
+    <Resource Include="Image\UIImage\Main\glow8.png" />
+    <Resource Include="Image\UIImage\Main\glow9.png" />
+    <Resource Include="Image\UIImage\Main\lecture.png" />
+    <Resource Include="Image\UIImage\Main\lecturename.png" />
+    <Resource Include="Image\UIImage\Main\lecturename2.png" />
+    <Resource Include="Image\UIImage\Main\mode.png" />
+    <Resource Include="Image\UIImage\Main\modename.png" />
+    <Resource Include="Image\UIImage\Main\modename2.png" />
+    <Resource Include="Image\UIImage\Main\power1.png" />
+    <Resource Include="Image\UIImage\Main\power2.png" />
+    <Resource Include="Image\UIImage\Main\startrecording.png" />
+    <Resource Include="Image\UIImage\Main\startrecording1.png" />
+    <Resource Include="Image\UIImage\Main\startrecording10.png" />
+    <Resource Include="Image\UIImage\Main\startrecording2.png" />
+    <Resource Include="Image\UIImage\Main\startrecording3.png" />
+    <Resource Include="Image\UIImage\Main\startrecording4.png" />
+    <Resource Include="Image\UIImage\Main\startrecording5.png" />
+    <Resource Include="Image\UIImage\Main\startrecording6.png" />
+    <Resource Include="Image\UIImage\Main\startrecording7.png" />
+    <Resource Include="Image\UIImage\Main\startrecording8.png" />
+    <Resource Include="Image\UIImage\Main\startrecording9.png" />
+    <Resource Include="Image\UIImage\Main\bg.png" />
+    <Resource Include="Image\UIImage\Main\backgorundImage.png" />
+    <Resource Include="Image\UIImage\Mode\modebg.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow1.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow10.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow2.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow3.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow4.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow5.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow6.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow7.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow8.png" />
+    <Resource Include="Image\UIImage\Mode\modeglow9.png" />
+    <Resource Include="Image\UIImage\Mode\oneavatar.png" />
+    <Resource Include="Image\UIImage\Mode\oneavatarname.png" />
+    <Resource Include="Image\UIImage\Mode\oneavatarname2.png" />
+    <Resource Include="Image\UIImage\Mode\realmode.png" />
+    <Resource Include="Image\UIImage\Mode\realmodename.png" />
+    <Resource Include="Image\UIImage\Mode\realmodename2.png" />
+    <Resource Include="Image\UIImage\Mode\select line.png" />
+    <Resource Include="Image\UIImage\Mode\twoavatar.png" />
+    <Resource Include="Image\UIImage\Mode\twoavatarname.png" />
+    <Resource Include="Image\UIImage\Mode\twoavatarname2.png" />
+    <Resource Include="Image\UIImage\Shared\okglow.png" />
+    <Resource Include="Image\UIImage\Shared\okglow1.png" />
+    <Resource Include="Image\UIImage\Shared\okglow10.png" />
+    <Resource Include="Image\UIImage\Shared\okglow2.png" />
+    <Resource Include="Image\UIImage\Shared\okglow3.png" />
+    <Resource Include="Image\UIImage\Shared\okglow4.png" />
+    <Resource Include="Image\UIImage\Shared\okglow5.png" />
+    <Resource Include="Image\UIImage\Shared\okglow6.png" />
+    <Resource Include="Image\UIImage\Shared\okglow7.png" />
+    <Resource Include="Image\UIImage\Shared\okglow8.png" />
+    <Resource Include="Image\UIImage\Shared\okglow9.png" />
+    <Resource Include="Image\UIImage\Shared\okname.png" />
+    <Resource Include="Image\UIImage\Shared\okname2.png" />
+    <Resource Include="Image\UIImage\Material\centericon.png" />
+    <Resource Include="Image\UIImage\Material\centername.png" />
+    <Resource Include="Image\UIImage\Material\centername2.png" />
+    <Resource Include="Image\UIImage\Material\daumicon.png" />
+    <Resource Include="Image\UIImage\Material\daumname.png" />
+    <Resource Include="Image\UIImage\Material\daumname2.png" />
+    <Resource Include="Image\UIImage\Material\google.png" />
+    <Resource Include="Image\UIImage\Material\googlename.png" />
+    <Resource Include="Image\UIImage\Material\googlename2.png" />
+    <Resource Include="Image\UIImage\Material\lecturebg.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow1.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow10.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow2.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow3.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow4.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow5.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow6.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow7.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow8.png" />
+    <Resource Include="Image\UIImage\Material\lectureglow9.png" />
+    <Resource Include="Image\UIImage\Material\lefticon.png" />
+    <Resource Include="Image\UIImage\Material\leftname.png" />
+    <Resource Include="Image\UIImage\Material\leftname2.png" />
+    <Resource Include="Image\UIImage\Material\line.png" />
+    <Resource Include="Image\UIImage\Material\line2.png" />
+    <Resource Include="Image\UIImage\Material\materialicon.png" />
+    <Resource Include="Image\UIImage\Material\materialname.png" />
+    <Resource Include="Image\UIImage\Material\materialname2.png" />
+    <Resource Include="Image\UIImage\Material\naver.png" />
+    <Resource Include="Image\UIImage\Material\navername.png" />
+    <Resource Include="Image\UIImage\Material\navername2.png" />
+    <Resource Include="Image\UIImage\Material\righticon.png" />
+    <Resource Include="Image\UIImage\Material\rightname.png" />
+    <Resource Include="Image\UIImage\Material\rightname2.png" />
+    <Resource Include="Image\UIImage\Material\smallglow.png" />
+    <Resource Include="Image\UIImage\Material\smallglow1.png" />
+    <Resource Include="Image\UIImage\Material\smallglow10.png" />
+    <Resource Include="Image\UIImage\Material\smallglow2.png" />
+    <Resource Include="Image\UIImage\Material\smallglow3.png" />
+    <Resource Include="Image\UIImage\Material\smallglow4.png" />
+    <Resource Include="Image\UIImage\Material\smallglow5.png" />
+    <Resource Include="Image\UIImage\Material\smallglow6.png" />
+    <Resource Include="Image\UIImage\Material\smallglow7.png" />
+    <Resource Include="Image\UIImage\Material\smallglow8.png" />
+    <Resource Include="Image\UIImage\Material\smallglow9.png" />
+    <Resource Include="Image\UIImage\Avatar\leftbutton.png" />
+    <Resource Include="Image\UIImage\Avatar\rightbutton.png" />
+    <Resource Include="Image\UIImage\Background\bgbg.png" />
+    <Resource Include="Image\UIImage\Background\center.png" />
+    <Resource Include="Image\UIImage\Background\left.png" />
+    <Resource Include="Image\UIImage\Background\leftbutton.png" />
+    <Resource Include="Image\UIImage\Background\rightbox.png" />
+    <Resource Include="Image\UIImage\Background\rightbutton.png" />
+    <Content Include="Image\x.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\강사명.png" />
+    <Resource Include="Image\강의명.png" />
+    <Resource Include="Image\강의파일.png" />
+    <Resource Include="Image\녹화버튼.png" />
+    <Resource Include="Image\녹화시작.png" />
+    <Resource Include="Image\닫기.png" />
+    <Resource Include="Image\동영상기본설정값.png" />
+    <Resource Include="Image\동영성기본설정값_2.png" />
+    <Resource Include="Image\로그인bg.png" />
+    <Resource Include="Image\로그인버튼.png" />
+    <Resource Include="Image\서버전송.png" />
+    <Resource Include="Image\이전삭제.png" />
+    <Resource Include="Image\이후삭제.png" />
+    <Resource Include="Image\인코딩.png" />
+    <Resource Include="Image\저장하기.png" />
+    <Resource Include="Image\전면병합.png" />
+    <Resource Include="Image\정보저장.png" />
+    <Resource Include="Image\차시명.png" />
+    <Resource Include="Image\찾기버튼.png" />
+    <Resource Include="Image\타이틀1.png" />
+    <Resource Include="Image\타이틀2.png" />
+    <Resource Include="Image\타이틀3.png" />
+    <Resource Include="Image\타이틀4.png" />
+    <Resource Include="Image\편집버튼.png" />
+    <Resource Include="Image\폴더변경.png" />
+    <Resource Include="Image\후면병합.png" />
+    <Resource Include="Vcast.ico" />
+    <Content Include="Image\3_마우스오버.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\4_마우스오버.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\5_마우스오버.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\check.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\Error.jpg" />
+    <Resource Include="Image\Error.png" />
+    <Content Include="Image\man1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\man2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\man3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\scBg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\woman1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\woman2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\woman3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Image\5_Over.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image\사본%282%29 - 4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="LectureInfo.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <None Include="Web References\kr.co.vcast.www\VCastService.disco" />
+    <Resource Include="Image\상위폴더.png" />
+    <Resource Include="Image\임시재생버튼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.vcast.co.kr/service/VCastService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\kr.co.vcast.www\</RelPath>
+      <UpdateFromURL>http://www.vcast.co.kr/service/VCastService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WpfApplication1_kr_co_vcast_www_VCastService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

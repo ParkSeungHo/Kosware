@@ -1,0 +1,264 @@
+﻿<Window x:Class="WpfApplication1.LectureSettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LectureSettingWindow" Height="1080" Width="1920" 
+        Loaded="LectureSettingWindow_Loaded" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized" KeyDown="Window_KeyDown">
+
+    <!--<Window.Resources>
+        <ControlTemplate x:Key="CBCustomToggleButton" TargetType="ToggleButton">
+            <Grid>
+                <Border Name="Border" BorderThickness="1,1,1,1"/>
+                <Border Name="SmallBorder" BorderThickness="0,0,1,0" />
+                <Path Name="Arrow" Width="10" Data="M0,0 L0,2 L4,6 L8,2 L8,0 L4,4 z"  Fill="{StaticResource ActiveBorderBrush}" />
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="UIElement.IsMouseOver" Value="True">
+                    <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource ActiveBorderBrush}" />
+                    <Setter TargetName="SmallBorder" Property="BorderBrush" Value="{StaticResource ActiveBorderBrush}" />
+                    <Setter TargetName="Arrow" Property="Fill" Value="White" />
+                </Trigger>
+                <Trigger Property="ToggleButton.IsChecked" Value="True">
+                    <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource ActiveBorderBrush}" />
+                    <Setter TargetName="SmallBorder" Property="BorderBrush" Value="{StaticResource ActiveBorderBrush}" />
+                </Trigger>
+                <Trigger Property="UIElement.IsEnabled" Value="False">    </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton Name="ToggleButton" Template="{StaticResource CBCustomToggleButton}" />
+                            <ContentPresenter Name="ContentSite" Content="{TemplateBinding ComboBox.SelectionBoxItem}" ContentTemplate="{TemplateBinding ComboBox.SelectionBoxItemTemplate}"/>
+                            <TextBox x:Name="PART_EditableTextBox" Foreground="{TemplateBinding Foreground}" IsReadOnly="{TemplateBinding IsReadOnly}" Visibility="Hidden" />
+                            <Popup Name="PART_Popup" IsOpen="{TemplateBinding ComboBox.IsDropDownOpen}">
+                                <Grid Name="DropDown" MinWidth="{TemplateBinding FrameworkElement.ActualWidth}" MaxHeight="{TemplateBinding ComboBox.MaxDropDownHeight}" SnapsToDevicePixels="True">
+                                    <Border Name="DropDownBorder" Background="{TemplateBinding ComboBox.Background}">
+                                        <ScrollViewer Margin="4,6,4,6">
+                                            <ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained" />
+                                        </ScrollViewer>
+                                    </Border>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger SourceName="PART_Popup" Property="Window.AllowsTransparency" Value="True">
+                                <Setter TargetName="DropDownBorder" Property="FrameworkElement.Margin" Value="0,2,0,0" />
+                            </Trigger>
+                            <Trigger Property="ComboBox.IsEditable" Value="True">
+                                <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+                                <Setter TargetName="PART_EditableTextBox" Property="UIElement.Visibility" Value="Visible" />
+                                <Setter TargetName="ContentSite" Property="UIElement.Visibility" Value="Hidden" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>-->
+    
+    <Grid Height="1080" Width="1920">
+        <Grid.Background>
+            <ImageBrush ImageSource="Image/UIImage/Main/all.png"/>
+        </Grid.Background>
+
+        <!--상 그리드-->
+        <Grid HorizontalAlignment="Left" Height="140" Margin="0,0,0,0" VerticalAlignment="Top" Width="1920">
+            <Image x:Name="img_ExitBtn" HorizontalAlignment="Left" Height="74" Margin="1759,41,0,0" VerticalAlignment="Top" Width="73" Source="Image/UIImage/Main/power1.png" MouseLeftButtonUp="img_ExitBtn_MouseLeftButtonUp"/>
+        </Grid>
+
+        <!--하 그리드-->
+        <Grid HorizontalAlignment="Left" Height="140" Margin="0,940,0,0" VerticalAlignment="Top" Width="1920"/>
+        <!--좌 그리드-->
+        <Grid HorizontalAlignment="Left" Height="858" Margin="0,82,0,0" VerticalAlignment="Top" Width="290">
+            
+            <!--<Image Visibility="Hidden" x:Name="image_background" HorizontalAlignment="Left" Height="60" Margin="0,190,0,0" VerticalAlignment="Top" Width="272" Source="Image/3.png" MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave" MouseLeftButtonDown="image_MouseLeftButtonDown"/>
+            <Image x:Name="image_avatar" HorizontalAlignment="Left" Height="60" Margin="0,260,0,0" VerticalAlignment="Top" Width="272" Source="Image/4.png" MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave" MouseLeftButtonDown="image_MouseLeftButtonDown"/>
+            <Image x:Name="image_video" HorizontalAlignment="Left" Height="60" Margin="0,330,0,0" VerticalAlignment="Top" Width="272" Source="Image/5.png" MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave" MouseLeftButtonDown="image_MouseLeftButtonDown"/>-->
+        </Grid>
+
+        <!--우 그리드-->
+        <!--강좌설정 그리드-->
+        <Grid x:Name="grid_class" Visibility="Visible" HorizontalAlignment="Left" Height="800" Margin="0,140,0,0" VerticalAlignment="Top" Width="1920">
+            <Grid.Background>
+                <ImageBrush ImageSource="Image/UIImage/Main/backgorundImage.png"/>
+            </Grid.Background>
+            <Image x:Name="image_class_thumbnail" HorizontalAlignment="Left" Width="364" Height="184" Margin="116,310,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/mode.png"/>
+            <Image x:Name="image_class" HorizontalAlignment="Left" Width="405" Height="115" Margin="95,495,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/modename.png" 
+                   MouseLeftButtonDown="image_MouseLeftButtonDown" MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave"/>
+
+            <Image x:Name="image_file_thumbnail" HorizontalAlignment="Left" Width="364" Height="184" Margin="554,310,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/lecture.png"/>
+            <Image x:Name="image_file" HorizontalAlignment="Left" Width="405" Height="115" Margin="533,495,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/lecturename.png" 
+                   MouseLeftButtonDown="image_MouseLeftButtonDown"  MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave"/>
+
+            <Image x:Name="image_avatar_thumbnail" HorizontalAlignment="Left" Width="364" Height="184" Margin="994,310,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/avatar.png"/>
+            <Image x:Name="image_avatar" HorizontalAlignment="Left" Width="405" Height="115" Margin="973,495,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/avatarname.png" 
+                   MouseLeftButtonDown="image_MouseLeftButtonDown"  MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave"/>
+
+            <Image x:Name="image_background_thumbnail" HorizontalAlignment="Left" Width="364" Height="184" Margin="1431,310,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/bg.png"/>
+            <Image x:Name="image_background" HorizontalAlignment="Left" Width="405" Height="115" Margin="1410,495,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/bgname.png" 
+                   MouseLeftButtonDown="image_MouseLeftButtonDown"  MouseEnter="image_MouseEnter" MouseLeave="image_MouseLeave"/>
+
+            <Image x:Name="image_start_recording" HorizontalAlignment="Left" Width="416" Height="70" Margin="1500,730,0,0" VerticalAlignment="Top" Source="Image/UIImage/Main/startrecording.png" 
+                   MouseLeftButtonUp="image_start_recording_MouseLeftButtonUp"/>
+            <ComboBox x:Name="cbLectureList" HorizontalAlignment="Left" Height="29" Margin="200,118,0,0" VerticalAlignment="Top" Width="387"/>
+            <TextBox x:Name="txt_LectureModuleTitle" HorizontalAlignment="Left" Height="35" Margin="200,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="387" BorderBrush="{x:Null}" TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.LineHeight="20" FontWeight="Bold" FontSize="14" PreviewKeyDown="txt_LectureModuleTitle_PreviewKeyDown" PreviewTextInput="txt_LectureModuleTitle_PreviewTextInput"/>
+            <TextBox x:Name="txt_MemberName" HorizontalAlignment="Left" Height="35" Margin="200,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="387" BorderBrush="{x:Null}" TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.LineHeight="20" FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="lblMode" Content="" HorizontalAlignment="Left" Height="94" Margin="116,627,0,0" VerticalAlignment="Top" Width="364" Foreground="#FF60FF00" FontWeight="Bold" FontFamily="AMGDT_IV25" FontSize="16"/>
+            <Label x:Name="lblMaterial" Content="" HorizontalAlignment="Left" Height="94" Margin="554,627,0,0" VerticalAlignment="Top" Width="364" Foreground="#FF60FF00" FontWeight="Bold" FontFamily="AMGDT_IV25" FontSize="16"/>
+            <Label x:Name="lblAvatar" Content="" HorizontalAlignment="Left" Height="94" Margin="994,627,0,0" VerticalAlignment="Top" Width="364" Foreground="#FF60FF00" FontWeight="Bold" FontFamily="AMGDT_IV25" FontSize="16"/>
+            <Label x:Name="lblBackground" Content="" HorizontalAlignment="Left" Height="94" Margin="1431,627,0,0" VerticalAlignment="Top" Width="364" Foreground="#FF60FF00" FontWeight="Bold" FontFamily="AMGDT_IV25" FontSize="16"/>
+            <!--<Image Visibility="Hidden" x:Name="image_video" HorizontalAlignment="Left" Height="60" Margin="973,614,0,0" VerticalAlignment="Top" Width="272"  MouseLeftButtonDown="image_MouseLeftButtonDown"/>
+            <Image HorizontalAlignment="Left" Height="31" Margin="60,60,0,0" VerticalAlignment="Top" Width="82" Source="Image/강의명.png" Stretch="None"/>
+            <Image HorizontalAlignment="Left" Height="31" Margin="60,120,0,0" VerticalAlignment="Top" Width="82" Source="Image/차시명.png" Stretch="None"/>
+            <Image HorizontalAlignment="Left" Height="31" Margin="60,180,0,0" VerticalAlignment="Top" Width="82" Source="Image/강사명.png" Stretch="None"/>
+            <ComboBox x:Name="cbLectureList" HorizontalAlignment="Left" Height="35" Margin="163,60,0,0" VerticalAlignment="Top" Width="526" FontWeight="Bold" FontSize="14">
+                <ComboBox.Background>
+                    <ImageBrush ImageSource="Image/강의명_선택완료영역.png"/>
+                </ComboBox.Background>
+            </ComboBox>
+            <TextBox x:Name="txt_LectureModuleTitle" HorizontalAlignment="Left" Height="35" Margin="163,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="526" BorderBrush="{x:Null}" TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.LineHeight="20" FontWeight="Bold" FontSize="14">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Image/차시명_선택완료영역.png"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="txt_MemberName" HorizontalAlignment="Left" Height="35" Margin="163,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="526" BorderBrush="{x:Null}" TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.LineHeight="20" FontWeight="Bold" FontSize="14">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Image/차시명_선택완료영역.png"/>
+                </TextBox.Background>
+            </TextBox>-->
+        </Grid>
+
+        <!--강의파일설정 그리드-->
+        <!--Grid x:Name="grid_file" Visibility="Hidden" HorizontalAlignment="Left" Height="858" Margin="290,82,0,0" VerticalAlignment="Top" Width="1630">
+            <Image HorizontalAlignment="Left" Height="31" Margin="60,60,0,0" VerticalAlignment="Top" Width="62" Source="Image/강의파일.png"/>
+            <TextBox Name="txt_path" HorizontalAlignment="Left" Height="35" Margin="142,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="547" BorderBrush="{x:Null}" TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.LineHeight="20" FontWeight="Bold" FontSize="14">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Image/강의파일_선택완료영역.png"/>
+                </TextBox.Background>
+            </TextBox>
+            <Image HorizontalAlignment="Left" Height="40" Margin="714,60,0,0" VerticalAlignment="Top" Width="78" Source="Image/찾기버튼.png" MouseLeftButtonUp="Image_MouseLeftButtonDown_1" />
+            <Image Visibility="Hidden" HorizontalAlignment="Left" Height="709" Margin="142,105,0,0" VerticalAlignment="Top" Width="1379" Source="Image/ppt영역.png"/>
+
+            <ComboBox x:Name="webviewList" HorizontalAlignment="Left" Height="35" Margin="163,100,0,0" VerticalAlignment="Top" Width="526" FontWeight="Bold" FontSize="14">
+                <ComboBox.Background>
+                    <ImageBrush ImageSource="Image/강의명_선택완료영역.png"/>
+                </ComboBox.Background>
+                <ComboBoxItem Content="선택 안함"/>
+            </ComboBox>
+            <CheckBox x:Name="Check" Content="Google StreetView" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top" Height="39" Width="240" FontSize="24" Foreground="White" Checked="CheckBox_Checked_1" Unchecked="CheckBox_Unchecked_1"/>
+            <RadioButton x:Name="lecture_mode1" Content="RadioButton" HorizontalAlignment="Left" Margin="200,400,0,0" VerticalAlignment="Top" Height="20" Width="20" Click="lecture_mode1_Click"/>
+            <RadioButton x:Name="lecture_mode2" Content="RadioButton" HorizontalAlignment="Left" Margin="400,400,0,0" VerticalAlignment="Top" Height="20" Width="20" Click="lecture_mode2_Click"/>
+            <RadioButton x:Name="lecture_mode3" Content="RadioButton" HorizontalAlignment="Left" Margin="600,400,0,0" VerticalAlignment="Top" Height="20" Width="20" Click="lecture_mode3_Click"/>
+            <Label Content="교안 왼쪽" HorizontalAlignment="Left" Margin="130,340,0,0" VerticalAlignment="Top" Height="56" Width="140" FontSize="24" Foreground="White" />
+            <Label Content="교안 중앙" HorizontalAlignment="Left" Margin="330,340,0,0" VerticalAlignment="Top" Height="56" Width="140" FontSize="24" Foreground="White" />
+            <Label Content="교안 오른쪽" HorizontalAlignment="Left" Margin="530,340,0,0" VerticalAlignment="Top" Height="56" Width="140" FontSize="24" Foreground="White" />
+
+            <RadioButton x:Name="rdbRealMode" Content="Real Mode" HorizontalAlignment="Left" Height="32" Margin="187,526,0,0" VerticalAlignment="Top" Width="137" Foreground="White" FontSize="20" IsChecked="True" Click="rdbRealMode_Click"/>
+            <RadioButton x:Name="rdbAvatarMode" Content="Avatar Mode" HorizontalAlignment="Left" Height="28" Margin="457,526,0,0" VerticalAlignment="Top" Width="142" Foreground="White" FontSize="20" Click="rdbAvatarMode_Click"/>
+        </Grid>-->
+
+        <!--배경설정 그리드-->
+        <!--<Grid Visibility="Hidden"
+              x:Name="grid_background" HorizontalAlignment="Left" Height="858" Margin="290,82,0,0" VerticalAlignment="Top" Width="1630">
+            <Image x:Name="backgroundImg1" HorizontalAlignment="Left" Height="177" Margin="60,60,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png" MouseLeftButtonUp="background_MouseLeftButtonDown"/>
+            <Image x:Name="backgroundImg2" HorizontalAlignment="Left" Height="177" Margin="426,60,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png" MouseLeftButtonUp="background_MouseLeftButtonDown"/>
+            <Image HorizontalAlignment="Left" Height="177" Margin="792,60,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png"/>
+            <Image HorizontalAlignment="Left" Height="177" Margin="1158,60,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png"/>
+
+            <Image HorizontalAlignment="Left" Height="177" Margin="60,297,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png"/>
+            <Image HorizontalAlignment="Left" Height="177" Margin="426,297,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png"/>
+            <Image HorizontalAlignment="Left" Height="177" Margin="792,297,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png"/>
+            <Image HorizontalAlignment="Left" Height="177" Margin="1158,297,0,0" VerticalAlignment="Top" Width="306" Source="Image/scBg.png"/>
+            <Image x:Name="backgroundSelect" HorizontalAlignment="Left" Height="64" Width="64" Margin="60,60,0,0" VerticalAlignment="Top" Source="Image/check.png" Stretch="Fill" Visibility="Visible"/>
+        </Grid>-->
+
+        <!--아바타설정 그리드-->
+        <!--<Grid Visibility="Visible" x:Name="grid_avatar" HorizontalAlignment="Left" Height="858" Margin="290,82,0,0" VerticalAlignment="Top" Width="1630">
+
+            <MediaElement x:Name="avatarImg1" HorizontalAlignment="Left" Height="350" Margin="145,50,0,0" VerticalAlignment="Top" Width="350"  Stretch="Fill" Source="face.mp4"  MouseEnter="avatarImg1_MouseEnter" MouseLeave="avatarImg1_MouseLeave" 
+                          MediaEnded="avatarImg1_MediaEnded" MouseLeftButtonUp="avatarImg1_MouseLeftButtonUp" Position="0:0:10" ScrubbingEnabled="True" />
+            <MediaElement x:Name="avatarImg2" HorizontalAlignment="Left" Height="350" Margin="640,50,0,0" VerticalAlignment="Top" Width="350"  Stretch="Fill" 
+                          MouseEnter="avatarImg2_MouseEnter" MouseLeave="avatarImg2_MouseLeave" MouseLeftButtonUp="avatarImg2_MouseLeftButtonUp" MediaEnded="avatarImg2_MediaEnded" Source="face2.mp4" />
+
+            <Image x:Name="avatarImg3" HorizontalAlignment="Left" Height="350" Margin="1135,50,0,0" VerticalAlignment="Top" Width="350" Source="Image/man2.jpg" Stretch="Fill" />
+            <Image x:Name="avatarImg4" HorizontalAlignment="Left" Height="350" Margin="145,458,0,0" VerticalAlignment="Top" Width="350" Source="Image/man1.jpg" Stretch="Fill" />
+            <Image x:Name="avatarImg5" HorizontalAlignment="Left" Height="350" Margin="640,458,0,0" VerticalAlignment="Top" Width="350" Source="Image/woman2.jpg" Stretch="Fill"/>
+            <Image x:Name="avatarImg6" HorizontalAlignment="Left" Height="350" Margin="1135,458,0,0" VerticalAlignment="Top" Width="350" Source="Image/woman3.jpg" Stretch="Fill"/>
+
+            <Image x:Name="avatarSelect" HorizontalAlignment="Left" Height="64" Width="64" Margin="145,50,0,0" VerticalAlignment="Top" Source="Image/check.png" Stretch="Fill" Visibility="Visible"/>
+            <Button Content="1Play" HorizontalAlignment="Left" Height="71" Margin="145,884,0,-97" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
+            <Button Content="2Play" HorizontalAlignment="Left" Height="71" Margin="307,884,0,-97" VerticalAlignment="Top" Width="114" Click="Button_Click_2"/>
+        </Grid>-->
+
+        <!--동영상 설정 그리드-->
+        <!--<Grid Visibility="Visible" x:Name="grid_video" HorizontalAlignment="Left" Height="858" Margin="290,82,0,0" VerticalAlignment="Top" Width="1630" >
+            <Image x:Name="imgBg1" HorizontalAlignment="Left" Width="450" Height="300" Margin="60,200,0,0" MouseLeftButtonUp="bgImages_MouseLeftButtonUp" VerticalAlignment="Top" Visibility="Collapsed" />
+            <Image x:Name="imgBg2" HorizontalAlignment="Left" Width="450" Height="300" Margin="570,200,0,0" VerticalAlignment="Top" MouseLeftButtonUp="bgImages_MouseLeftButtonUp" Visibility="Collapsed"/>
+            <Image x:Name="imgBg3" Margin="1100,200,80,0" HorizontalAlignment="Left" Width="450" Height="300" VerticalAlignment="Top" MouseLeftButtonUp="bgImages_MouseLeftButtonUp" Visibility="Collapsed"/>
+            <Image x:Name="bgSelect" HorizontalAlignment="Left" Height="64" Width="64" Margin="60,200,0,0" VerticalAlignment="Top" Source="Image/check.png" Stretch="Fill" Visibility="Hidden" />-->
+            <!--<Image HorizontalAlignment="Left" Height="40" Margin="60,60,0,0" VerticalAlignment="Top" Width="1000" Source="Image/동영상기본설정값.png"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,110,0,0" TextWrapping="Wrap" Text="1. 비디오 코덱 :" VerticalAlignment="Top" Height="30" Width="150" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="275,110,0,0" TextWrapping="Wrap" Text="MPEG-4 OpenDiv(Divx4)" VerticalAlignment="Top" Height="30" Width="400" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,160,0,0" TextWrapping="Wrap" Text="2. 압축방식 :" VerticalAlignment="Top" Height="30" Width="130" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="250,160,0,0" TextWrapping="Wrap" Text="[1PASS-CBR] 비트레이트 기준 인코딩" VerticalAlignment="Top" Height="30" Width="425" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,210,0,0" TextWrapping="Wrap" Text="3. 비트레이트 값 :" VerticalAlignment="Top" Height="30" Width="170" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="295,210,0,0" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Height="30" Width="380" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,260,0,0" TextWrapping="Wrap" Text="4. 프레임 :" VerticalAlignment="Top" Height="30" Width="100" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="225,260,0,0" TextWrapping="Wrap" Text="24FPS" VerticalAlignment="Top" Height="30" Width="450" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,310,0,0" TextWrapping="Wrap" Text="5. 기본화면 크기 :" VerticalAlignment="Top" Height="30" Width="170" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="295,310,0,0" TextWrapping="Wrap" Text="1920 * 1080" VerticalAlignment="Top" Height="30" Width="380" Foreground="White" FontSize="20" FontWeight="Bold"/>
+
+
+            <Image HorizontalAlignment="Left" Height="40" Margin="60,360,0,0" VerticalAlignment="Top" Width="1000" Source="Image/해상도조정.png"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,410,0,0" TextWrapping="Wrap" Text="1. 기본해상도 :" VerticalAlignment="Top" Height="30" Width="140" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="30" Margin="275,410,0,0" TextWrapping="Wrap" Text="1920" BorderThickness="0" VerticalAlignment="Top" Width="104" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="388,410,0,0" TextWrapping="Wrap" Text="*" VerticalAlignment="Top" Height="30" Width="21" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="30" Margin="409,410,0,0" TextWrapping="Wrap" Text="1090" BorderThickness="0" VerticalAlignment="Top" Width="104" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="120,460,0,0" TextWrapping="Wrap" Text="2. 해상도지정" VerticalAlignment="Top" Height="30" Width="130" Foreground="White" FontSize="20" FontWeight="Bold"/>
+
+            <RadioButton Visibility="Hidden" Content="RadioButton" HorizontalAlignment="Left" Margin="174,504,0,0" VerticalAlignment="Top" Height="15" Width="16" RenderTransformOrigin="0.5,0.5">
+                <RadioButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="2" ScaleX="2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <RadioButton Visibility="Hidden" Content="RadioButton" HorizontalAlignment="Left" Margin="172,538,0,0" VerticalAlignment="Top" Height="15" Width="16" RenderTransformOrigin="0.5,0.5">
+                <RadioButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="2" ScaleX="2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <RadioButton Visibility="Hidden" Content="RadioButton" HorizontalAlignment="Left" Margin="172,574,0,0" VerticalAlignment="Top" Height="15" Width="16" RenderTransformOrigin="0.5,0.5">
+                <RadioButton.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="2" ScaleX="2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </RadioButton.RenderTransform>
+            </RadioButton>
+            <TextBlock HorizontalAlignment="Left" Margin="206,500,0,0" TextWrapping="Wrap" Text="1920 * 1090" VerticalAlignment="Top" Height="30" Width="130" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="206,531,0,0" TextWrapping="Wrap" Text="480 * 270" VerticalAlignment="Top" Height="30" Width="130" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Visibility="Hidden" HorizontalAlignment="Left" Margin="206,570,0,0" TextWrapping="Wrap" Text="640 * 768" VerticalAlignment="Top" Height="30" Width="130" Foreground="White" FontSize="20" FontWeight="Bold"/>
+
+
+            <Image Visibility="Hidden" HorizontalAlignment="Left" Height="40" Margin="60,620,0,0" VerticalAlignment="Top" Width="1000" Source="Image/기본저장경로.png"/>
+            <TextBlock Visibility="Hidden" HorizontalAlignment="Left" Margin="120,680,0,0" TextWrapping="Wrap" Text="D:\UserList" VerticalAlignment="Top" Height="30" Width="430" Foreground="Black" FontSize="20" FontWeight="Bold" Background="White"/>
+            <Image Visibility="Hidden" HorizontalAlignment="Left" Height="43" Margin="569,675,0,0" VerticalAlignment="Top" Width="106" Source="Image/폴더변경.png"/>
+
+        </Grid>-->
+    </Grid>
+</Window>
+

@@ -1,0 +1,149 @@
+Model Bone Information
+------------------------------
+ - Name: RootNode
+  Index: 0
+	 - Name: Templet_Female_Body
+	  Index: 1
+	 - Name: Bip001
+	  Index: 2
+		 - Name: Bip001 Footsteps
+		  Index: 3
+		 - Name: Bip001 Pelvis
+		  Index: 4
+			 - Name: Bip001 Spine
+			  Index: 5
+				 - Name: Bip001 Spine1
+				  Index: 6
+					 - Name: Bip001 Spine2
+					  Index: 7
+						 - Name: Bip001 Spine3
+						  Index: 8
+							 - Name: Bip001 Neck
+							  Index: 9
+								 - Name: Bip001 Head
+								  Index: 10
+									 - Name: Bip001 HeadNub
+									  Index: 11
+								 - Name: Bip001 L Clavicle
+								  Index: 12
+									 - Name: Bip001 L UpperArm
+									  Index: 13
+										 - Name: Bip001 L Forearm
+										  Index: 14
+											 - Name: Bip001 L Hand
+											  Index: 15
+												 - Name: Bip001 L Finger0
+												  Index: 16
+													 - Name: Bip001 L Finger01
+													  Index: 17
+														 - Name: Bip001 L Finger02
+														  Index: 18
+															 - Name: Bip001 L Finger0Nub
+															  Index: 19
+												 - Name: Bip001 L Finger1
+												  Index: 20
+													 - Name: Bip001 L Finger11
+													  Index: 21
+														 - Name: Bip001 L Finger12
+														  Index: 22
+															 - Name: Bip001 L Finger1Nub
+															  Index: 23
+												 - Name: Bip001 L Finger2
+												  Index: 24
+													 - Name: Bip001 L Finger21
+													  Index: 25
+														 - Name: Bip001 L Finger22
+														  Index: 26
+															 - Name: Bip001 L Finger2Nub
+															  Index: 27
+												 - Name: Bip001 L Finger3
+												  Index: 28
+													 - Name: Bip001 L Finger31
+													  Index: 29
+														 - Name: Bip001 L Finger32
+														  Index: 30
+															 - Name: Bip001 L Finger3Nub
+															  Index: 31
+												 - Name: Bip001 L Finger4
+												  Index: 32
+													 - Name: Bip001 L Finger41
+													  Index: 33
+														 - Name: Bip001 L Finger42
+														  Index: 34
+															 - Name: Bip001 L Finger4Nub
+															  Index: 35
+								 - Name: Bip001 R Clavicle
+								  Index: 36
+									 - Name: Bip001 R UpperArm
+									  Index: 37
+										 - Name: Bip001 R Forearm
+										  Index: 38
+											 - Name: Bip001 R Hand
+											  Index: 39
+												 - Name: Bip001 R Finger0
+												  Index: 40
+													 - Name: Bip001 R Finger01
+													  Index: 41
+														 - Name: Bip001 R Finger02
+														  Index: 42
+															 - Name: Bip001 R Finger0Nub
+															  Index: 43
+												 - Name: Bip001 R Finger1
+												  Index: 44
+													 - Name: Bip001 R Finger11
+													  Index: 45
+														 - Name: Bip001 R Finger12
+														  Index: 46
+															 - Name: Bip001 R Finger1Nub
+															  Index: 47
+												 - Name: Bip001 R Finger2
+												  Index: 48
+													 - Name: Bip001 R Finger21
+													  Index: 49
+														 - Name: Bip001 R Finger22
+														  Index: 50
+															 - Name: Bip001 R Finger2Nub
+															  Index: 51
+												 - Name: Bip001 R Finger3
+												  Index: 52
+													 - Name: Bip001 R Finger31
+													  Index: 53
+														 - Name: Bip001 R Finger32
+														  Index: 54
+															 - Name: Bip001 R Finger3Nub
+															  Index: 55
+												 - Name: Bip001 R Finger4
+												  Index: 56
+													 - Name: Bip001 R Finger41
+													  Index: 57
+														 - Name: Bip001 R Finger42
+														  Index: 58
+															 - Name: Bip001 R Finger4Nub
+															  Index: 59
+				 - Name: Bip001 L Thigh
+				  Index: 60
+					 - Name: Bip001 L Calf
+					  Index: 61
+						 - Name: Bip001 L Foot
+						  Index: 62
+							 - Name: Bip001 L Toe0
+							  Index: 63
+								 - Name: Bip001 L Toe0Nub
+								  Index: 64
+				 - Name: Bip001 R Thigh
+				  Index: 65
+					 - Name: Bip001 R Calf
+					  Index: 66
+						 - Name: Bip001 R Foot
+						  Index: 67
+							 - Name: Bip001 R Toe0
+							  Index: 68
+								 - Name: Bip001 R Toe0Nub
+								  Index: 69
+
+
+Model Mesh Information
+-------------------------------
+-ID : 0
+ Name: Templet_Female_Body
+ Bone: Templet_Female_Body (1)

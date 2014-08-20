@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LectureList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanySeq" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MemberSeq" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LectureListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LectureListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LectureModuleAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LectureSeq" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MemberSeq" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModuleTitle" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PlayTime" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LectureModuleAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LectureModuleAddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LectureModuleFinish">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LectureSeq" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="LectureModuleSeq" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LectureModuleFinishResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LectureListSoapIn">
+    <wsdl:part name="parameters" element="tns:LectureList" />
+  </wsdl:message>
+  <wsdl:message name="LectureListSoapOut">
+    <wsdl:part name="parameters" element="tns:LectureListResponse" />
+  </wsdl:message>
+  <wsdl:message name="LectureModuleAddSoapIn">
+    <wsdl:part name="parameters" element="tns:LectureModuleAdd" />
+  </wsdl:message>
+  <wsdl:message name="LectureModuleAddSoapOut">
+    <wsdl:part name="parameters" element="tns:LectureModuleAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="LectureModuleFinishSoapIn">
+    <wsdl:part name="parameters" element="tns:LectureModuleFinish" />
+  </wsdl:message>
+  <wsdl:message name="LectureModuleFinishSoapOut">
+    <wsdl:part name="parameters" element="tns:LectureModuleFinishResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VCastServiceSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LectureList">
+      <wsdl:input message="tns:LectureListSoapIn" />
+      <wsdl:output message="tns:LectureListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LectureModuleAdd">
+      <wsdl:input message="tns:LectureModuleAddSoapIn" />
+      <wsdl:output message="tns:LectureModuleAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LectureModuleFinish">
+      <wsdl:input message="tns:LectureModuleFinishSoapIn" />
+      <wsdl:output message="tns:LectureModuleFinishSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VCastServiceSoap" type="tns:VCastServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LectureList">
+      <soap:operation soapAction="http://tempuri.org/LectureList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LectureModuleAdd">
+      <soap:operation soapAction="http://tempuri.org/LectureModuleAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LectureModuleFinish">
+      <soap:operation soapAction="http://tempuri.org/LectureModuleFinish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VCastServiceSoap12" type="tns:VCastServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LectureList">
+      <soap12:operation soapAction="http://tempuri.org/LectureList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LectureModuleAdd">
+      <soap12:operation soapAction="http://tempuri.org/LectureModuleAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LectureModuleFinish">
+      <soap12:operation soapAction="http://tempuri.org/LectureModuleFinish" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VCastService">
+    <wsdl:port name="VCastServiceSoap" binding="tns:VCastServiceSoap">
+      <soap:address location="http://www.vcast.co.kr/service/VCastService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VCastServiceSoap12" binding="tns:VCastServiceSoap12">
+      <soap12:address location="http://www.vcast.co.kr/service/VCastService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
